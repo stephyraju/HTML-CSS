@@ -1,0 +1,250 @@
+<html>
+
+<head>
+    <style>
+        /*  
+            This is a comment in CSS
+            on a new line        
+        */
+        /* p {
+            color: blue;
+        }
+
+        #paragraph1 {
+            color: red;
+        }
+
+        .class1 {
+            background-color: aqua;
+        }
+
+        .class2 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p.class3 {
+            font-size: larger;
+        }
+
+        * {
+            font-style: italic;
+        }
+
+
+        p.dotted {
+            /* border-style: dashed dotted; */
+        /* border-top-style: dashed;
+        border-bottom-style: dotted; */
+
+        /* border-width: 5px; */
+        /* border-top: 10px;
+            border-bottom: 5px; */
+        /* border-color: red;
+
+        } */
+
+        /*
+
+            CSS attribute selector
+            <tag_name>[attribute] {
+                key: value
+            }
+        */
+
+        /* a[target] {
+            background-color: red;
+        }
+
+        a[target="_self"] {
+            background-color: blue;
+        } */
+
+        [title~="Logo"] {
+            width: 200px;
+        }
+
+        p[class |="bottom"] {
+            background-color: aqua;
+        }
+
+        [class ^="bottom"] {
+            /* starts with */
+            background-color: yellow;
+
+        }
+
+        [title$="Logo"] {
+            /* ends with */
+
+        }
+
+        /* Pseudo selectors 
+
+            selector:pseudo-class {
+                
+            }
+        */
+
+
+        div:hover {
+            background-color: black;
+        }
+
+        p:first-child {
+            background-color: blue;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:link {
+            color: green;
+        }
+
+        a:active {
+            color: brown;
+        }
+
+        /*
+            pseudo elements
+
+            selector::<pseudo element> {
+
+            }
+        */
+
+        p::first-line {
+            color: green;
+        }
+
+        p::first-letter {
+            color: blue;
+        }
+    </style>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+    <div class="container" style="border-style: dotted;">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+    </div>
+
+    <div class="container-fluid" style="border-style: dotted;">
+        <h1>This is a heading</h1>
+        <p>This is a paragraph</p>
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-4 bg-primary">
+            .col
+        </div>
+        <div class="col-md-4 bg-secondary">
+            .col
+        </div>
+        <div class="col-lg-4 bg-warning">
+            .col
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+            <label>Username</label>
+        </div>
+        <div class="col-4">
+            <input type="text">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8">
+            <label>Password</label>
+        </div>
+        <div class="col-4">
+            <input type="password">
+        </div>
+    </div>
+
+    <!-- This is a comment -->
+    <p>
+        This is a paragraph
+    </p>
+
+    <p id="paragraph1" class="class1 class2">
+        This is second paragraph
+    </p>
+
+    <h2 class="class2">This is a heading</h2>
+
+    <h3 class="class3">This is another heading</h3>
+
+    <p class="class3">This is another paragraph</p>
+
+    <p class="dotted">
+        This is a paragraph with dotted border
+    </p>
+
+    <table class="table">
+        <tr>
+            <th>Column 1</th>
+            <td>Data 1</td>
+            <td>Data 2</td>
+        </tr>
+        <tr>
+            <th>Column 2</th>
+            <td> Data 3</td>
+            <td>Data 4</td>
+        </tr>
+    </table>
+
+    <button class="btn btn-warning">Default</button>
+
+    <p class="text-warning">This is an info paragraph</p>
+
+    <a href="http://www.google.com" target="_blank">Google</a>
+    <br>
+    <a href="http://www.apple.com" target="_self">Apple</a>
+
+    <img src="images/google.jpg" title="Corporate Google Logo" width="100px" height="100px">
+
+    <p class="bottom-right">Bottom right class</p>
+    <p class="has-border">Has border</p>
+    <p class="bottom-left">Bottom left class</p>
+    <p class="bottom">Has border</p>
+
+    <div>
+        This is a demo DIV element.
+        <p>This is a paragraph inside DIV element</p>
+        <p>This is another paragraph inside DIV element</p>
+    </div>
+
+    <p>
+        This is the first line of the paragraph.
+        This is the second line of the paragraph.
+        This is the first line of the paragraph.
+        This is the second line of the paragraph.
+        This is the first line of the paragraph.
+        This is the second line of the paragraph.
+        This is the first line of the paragraph.
+        This is the second line of the paragraph.
+        This is the first line of the paragraph.
+        This is the second line of the paragraph.
+        This is the first line of the paragraph.
+        This is the second line of the paragraph.
+    </p>
+
+    <button>Click Me</button>
+</body>
+
+</html>
